@@ -1,0 +1,96 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+.form-inputs{
+    position:relative;
+}
+.form-inputs .form-control{
+    height:45px; 
+}
+.form-inputs .form-control:focus{
+    box-shadow:none;
+    border:1px solid #000;
+}
+.form-inputs i{
+    position:absolute;
+    right:10px;
+    top:15px;
+}
+.shop-bag{
+    background-color:#ab7b7b;
+    color:#fff;
+    height:50px;
+    width:50px;
+    font-size:25px;
+    display:flex;
+    border: 2px red double;
+    border-radius:50%;
+    align-items:center;
+    justify-content:center;
+}
+.qty{
+    font-size:12px;
+}
+
+
+
+
+
+
+
+.line1_stl{
+    border-bottom: 5px red solid;
+    border-radius: 20px;
+    width: 2vw;
+    height: 4vh;
+}
+.prd_card_stl{
+    border: none !important;
+    transition: all 50ms ease-in-out;
+}
+.btn-all-stl:focus {
+    background-color: #ffbf00 !important;
+}
+.add_btn{
+    visibility: hidden;
+    transition: all 150ms ease-in-out;
+}
+.prd_card_stl:hover{
+    border: 2px rgba(0, 0, 255, 0.237) solid !important;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.prd_card_stl:hover .add_btn{
+    visibility: visible;
+}
+.add_btn:hover{
+    background-color: rgb(181, 66, 66);
+}
+.dsbtn2:hover{
+    background-color: aqua;
+}
+.card-title{
+    color: rgb(205, 99, 34);
+    font-size: x-large;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+.card-price{
+    font-family: "Protest Riot", sans-serif;
+    font-size: large;
+    font-weight: 400;
+    font-style: normal;
+}
+.card-brand{
+    font-weight: 400 ;
+    font-size: 14px ;
+    line-height: 20px ;
+    color: #09082a;
+}

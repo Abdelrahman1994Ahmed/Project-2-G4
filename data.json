@@ -1,0 +1,112 @@
+[{
+  "id": 1,
+  "title": "Black Sweater",
+  "description": "A sweater that its color is black",
+  "price": 593,
+  "discountPercentage": 0,
+  "rating": 6,
+  "stock": 94,
+  "brand": "Cottonel",
+  "category": "Sweaters",
+  "image": "https://preview.colorlib.com/theme/coloshop/images/product_1.png.webp"
+},
+{
+  "id": 2,
+  "title": "Brown purse",
+  "description": "A Handbag that its color is Browen",
+  "price": 693,
+  "discountPercentage": 0,
+  "rating": 8,
+  "stock": 5,
+  "brand": "H&M",
+  "category": "Handbags"
+},
+{
+  "id": 3,
+  "title": "Yellow Shirt",
+  "description": "A Shirt that its color is Yellow with long sleeves",
+  "price": 233,
+  "discountPercentage": 0,
+  "rating": 6,
+  "stock": 9,
+  "brand": "Cottonel",
+  "category": "Shirts"
+},
+{
+  "id": 4,
+  "title": "Silver purse",
+  "description": "A Handbag that its color is gray",
+  "price": 1003,
+  "discountPercentage": 0,
+  "rating": 6,
+  "stock": 94,
+  "brand": "Armani",
+  "category": "Handbags"
+},
+{
+  "id": 5,
+  "title": "Green Shoes",
+  "description": "Green Shoes",
+  "price": 273,
+  "discountPercentage": 0,
+  "rating": 6,
+  "stock": 100,
+  "brand": "Arc Shoes",
+  "category": "Shoes"
+},
+{
+  "id": 6,
+  "title": "Black specs.",
+  "description": "Black Sunglasses",
+  "price": 2083,
+  "discountPercentage": 0,
+  "rating": 6,
+  "stock": 200,
+  "brand": "Hugo Boss",
+  "category": "Sunglasses"
+},
+{
+  "id": 7,
+  "title": "Beige Sweater",
+  "description": "A sweater that its color is Beige",
+  "price": 593,
+  "discountPercentage": 0,
+  "rating": 6,
+  "stock": 100,
+  "brand": "Cottonel",
+  "category": "Sweaters"
+},
+{
+  "id": 8,
+  "title": "Beige Handbag",
+  "description": "A Handbag that its color is Beige",
+  "price": 553,
+  "discountPercentage": 0,
+  "rating": 9,
+  "stock": 94,
+  "brand": "Cali",
+  "category": "Handbag"
+},
+{
+  "id": 9,
+  "title": "Beige Jacket",
+  "description": "A Jacket that its color is Beige",
+  "price": 2503,
+  "discountPercentage": 0,
+  "rating": 8,
+  "stock": 50,
+  "brand": "Men's Club",
+  "category": "Jackets"
+},
+{
+  "id": 10,
+  "title": "Silver T-Shirt",
+  "description": "A T-Shirt that its color is Silver",
+  "price": 150,
+  "discountPercentage": 0,
+  "rating": 9.5,
+  "stock": 250,
+  "brand": "Men's Club",
+  "category": "T-Shirts"
+}
+]
