@@ -23,148 +23,148 @@
 // }
 // xmlrequest.send()
 
-let data_1 = fetch('./data.json')
-        .then(response => response.json())
-        .then(data => {
-            for (let i = 0; i < data.length; i++) {
-                // console.log(data[i].brand);
-                let arraynew = data[i].title
-                let arraynew2 = arraynew.split(',')
-                console.log(typeof(arraynew2));
-                console.log(arraynew2);
-                for (let i = 0; i < arraynew2.length; i++) {
-                let prodsdiv = document.querySelector(".crdjs");
-                prodsdiv.innerText +=  arraynew2   
-                }
-            }
-});
-let data_2 = fetch('./data.json')
-        .then(response => response.json())
-        .then(data => {
-            for (let i = 0; i < data.length; i++) {
-                // console.log(data[i].brand);
-                let arraynew = [data[i].price]
-                console.log(typeof(arraynew));
-                console.log(arraynew);
-                for (let i = 0; i < arraynew.length; i++) {
-                    let prodsdiv = document.querySelector(".crdjs2");
-                    prodsdiv.innerText +=  arraynew   
-                }
-            }
-});
-let data_3 = fetch('./data.json')
-        .then(response => response.json())
-        .then(data => {
-            for (let i = 0; i < data.length; i++) {
-                // console.log(data[i].brand);
-                let arraynew = data[i].brand
-                let arraynew2 = arraynew.split(',')
-                console.log(typeof(arraynew2));
-                console.log(arraynew2);
-                for (let i = 0; i < arraynew2.length; i++) {
-                let prodsdiv = document.querySelector(".crdjs3");
-                prodsdiv.innerText +=  arraynew2   
-                }
-            }
-});
-
 // let data_1 = fetch('./data.json')
 //         .then(response => response.json())
 //         .then(data => {
+//             for (let i = 0; i < data.length; i++) {
+//                 // console.log(data[i].brand);
+//                 let arraynew = data[i].title
+//                 let arraynew2 = arraynew.split(',')
+//                 console.log(typeof(arraynew2));
+//                 console.log(arraynew2);
+//                 for (let i = 0; i < arraynew2.length; i++) {
+//                 let prodsdiv = document.querySelector(".crdjs");
+//                 prodsdiv.innerText +=  arraynew2   
+//                 }
+//             }
+// });
+// let data_2 = fetch('./data.json')
+//         .then(response => response.json())
+//         .then(data => {
+//             for (let i = 0; i < data.length; i++) {
+//                 // console.log(data[i].brand);
+//                 let arraynew = [data[i].price]
+//                 console.log(typeof(arraynew));
+//                 console.log(arraynew);
+//                 for (let i = 0; i < arraynew.length; i++) {
+//                     let prodsdiv = document.querySelector(".crdjs2");
+//                     prodsdiv.innerText +=  arraynew   
+//                 }
+//             }
+// });
+// let data_3 = fetch('./data.json')
+//         .then(response => response.json())
+//         .then(data => {
+//             for (let i = 0; i < data.length; i++) {
+//                 // console.log(data[i].brand);
+//                 let arraynew = data[i].brand
+//                 let arraynew2 = arraynew.split(',')
+//                 console.log(typeof(arraynew2));
+//                 console.log(arraynew2);
+//                 for (let i = 0; i < arraynew2.length; i++) {
+//                 let prodsdiv = document.querySelector(".crdjs3");
+//                 prodsdiv.innerText +=  arraynew2   
+//                 }
+//             }
+// });
 
-//             // catch HTML elements to display the JSON data
-//             let priceElement = document.getElementById('card_price');
-//             priceElement.textContent = "$ " + data[0].price;
+let data_1 = fetch('./data.json')
+        .then(response => response.json())
+        .then(data => {
 
-//             let nameElement = document.getElementById('card-title');
-//             nameElement.textContent = data[0].title;
+            // catch HTML elements to display the JSON data
+            let priceElement = document.getElementById('card_price');
+            priceElement.textContent = "$ " + data[0].price;
 
-//             let brandElement = document.getElementById('card-brand');
-//             brandElement.textContent = "BN. : " + data[0].brand;
+            let nameElement = document.getElementById('card-title');
+            nameElement.textContent = data[0].title;
 
-//             let brandElement2 = document.getElementById('card-brand2');
-//             brandElement2.textContent = "BN. : " + data[1].brand;
+            let brandElement = document.getElementById('card-brand');
+            brandElement.textContent = "BN. : " + data[0].brand;
 
-//             let priceElement2 = document.getElementById('card_price2');
-//             priceElement2.textContent = "$ " + data[1].price;
+            let brandElement2 = document.getElementById('card-brand2');
+            brandElement2.textContent = "BN. : " + data[1].brand;
 
-//             let nameElement2 = document.getElementById('card-title2');
-//             nameElement2.textContent = data[1].title;
+            let priceElement2 = document.getElementById('card_price2');
+            priceElement2.textContent = "$ " + data[1].price;
 
-//             let brandElement3 = document.getElementById('card-brand3');
-//             brandElement3.textContent = "BN. : " + data[2].brand;
+            let nameElement2 = document.getElementById('card-title2');
+            nameElement2.textContent = data[1].title;
 
-//             let priceElement3 = document.getElementById('card_price3');
-//             priceElement3.textContent = "$ " + data[2].price;
+            let brandElement3 = document.getElementById('card-brand3');
+            brandElement3.textContent = "BN. : " + data[2].brand;
 
-//             let nameElement3 = document.getElementById('card-title3');
-//             nameElement3.textContent = data[2].title;
+            let priceElement3 = document.getElementById('card_price3');
+            priceElement3.textContent = "$ " + data[2].price;
 
-//             let brandElement4 = document.getElementById('card-brand4');
-//             brandElement4.textContent = "BN. : " + data[3].brand;
+            let nameElement3 = document.getElementById('card-title3');
+            nameElement3.textContent = data[2].title;
 
-//             let priceElement4 = document.getElementById('card_price4');
-//             priceElement4.textContent = "$ " + data[3].price;
+            let brandElement4 = document.getElementById('card-brand4');
+            brandElement4.textContent = "BN. : " + data[3].brand;
 
-//             let nameElement4 = document.getElementById('card-title4');
-//             nameElement4.textContent = data[3].title;
+            let priceElement4 = document.getElementById('card_price4');
+            priceElement4.textContent = "$ " + data[3].price;
 
-//             let brandElement5 = document.getElementById('card-brand5');
-//             brandElement5.textContent = "BN. : " + data[4].brand;
+            let nameElement4 = document.getElementById('card-title4');
+            nameElement4.textContent = data[3].title;
 
-//             let priceElement5 = document.getElementById('card_price5');
-//             priceElement5.textContent = "$ " + data[4].price;
+            let brandElement5 = document.getElementById('card-brand5');
+            brandElement5.textContent = "BN. : " + data[4].brand;
 
-//             let nameElement5 = document.getElementById('card-title5');
-//             nameElement5.textContent = data[4].title;
+            let priceElement5 = document.getElementById('card_price5');
+            priceElement5.textContent = "$ " + data[4].price;
 
-//             let brandElement6 = document.getElementById('card-brand6');
-//             brandElement6.textContent = "BN. : " + data[5].brand;
+            let nameElement5 = document.getElementById('card-title5');
+            nameElement5.textContent = data[4].title;
 
-//             let priceElement6 = document.getElementById('card_price6');
-//             priceElement6.textContent = "$ " + data[5].price;
+            let brandElement6 = document.getElementById('card-brand6');
+            brandElement6.textContent = "BN. : " + data[5].brand;
 
-//             let nameElement6 = document.getElementById('card-title6');
-//             nameElement6.textContent = data[5].title;
+            let priceElement6 = document.getElementById('card_price6');
+            priceElement6.textContent = "$ " + data[5].price;
 
-//             let priceElement7 = document.getElementById('card_price7');
-//             priceElement7.textContent = "$ " + data[6].price;
+            let nameElement6 = document.getElementById('card-title6');
+            nameElement6.textContent = data[5].title;
 
-//             let nameElement7 = document.getElementById('card-title7');
-//             nameElement7.textContent = data[6].title;
+            let priceElement7 = document.getElementById('card_price7');
+            priceElement7.textContent = "$ " + data[6].price;
 
-//             let brandElement7 = document.getElementById('card-brand7');
-//             brandElement7.textContent = "BN. : " + data[6].brand;
+            let nameElement7 = document.getElementById('card-title7');
+            nameElement7.textContent = data[6].title;
 
-//             let priceElement8 = document.getElementById('card_price8');
-//             priceElement8.textContent = "$ " + data[7].price;
+            let brandElement7 = document.getElementById('card-brand7');
+            brandElement7.textContent = "BN. : " + data[6].brand;
 
-//             let nameElement8 = document.getElementById('card-title8');
-//             nameElement8.textContent = data[7].title;
+            let priceElement8 = document.getElementById('card_price8');
+            priceElement8.textContent = "$ " + data[7].price;
 
-//             let brandElement8 = document.getElementById('card-brand8');
-//             brandElement8.textContent = "BN. : " + data[7].brand;
+            let nameElement8 = document.getElementById('card-title8');
+            nameElement8.textContent = data[7].title;
 
-//             let priceElement9 = document.getElementById('card_price9');
-//             priceElement9.textContent = "$ " + data[8].price;
+            let brandElement8 = document.getElementById('card-brand8');
+            brandElement8.textContent = "BN. : " + data[7].brand;
 
-//             let nameElement9 = document.getElementById('card-title9');
-//             nameElement9.textContent = data[8].title;
+            let priceElement9 = document.getElementById('card_price9');
+            priceElement9.textContent = "$ " + data[8].price;
 
-//             let brandElement9 = document.getElementById('card-brand9');
-//             brandElement9.textContent = "BN. : " + data[8].brand;
+            let nameElement9 = document.getElementById('card-title9');
+            nameElement9.textContent = data[8].title;
 
-//             let priceElement10 = document.getElementById('card_price10');
-//             priceElement10.textContent = "$ " + data[9].price;
+            let brandElement9 = document.getElementById('card-brand9');
+            brandElement9.textContent = "BN. : " + data[8].brand;
 
-//             let nameElement10 = document.getElementById('card-title10');
-//             nameElement10.textContent = data[9].title;
+            let priceElement10 = document.getElementById('card_price10');
+            priceElement10.textContent = "$ " + data[9].price;
 
-//             let brandElement10 = document.getElementById('card-brand10');
-//             brandElement10.textContent = "BN. : " + data[9].brand;
+            let nameElement10 = document.getElementById('card-title10');
+            nameElement10.textContent = data[9].title;
 
-//         })
-// .catch(error => console.error("Error fetching JSON data:", error))
+            let brandElement10 = document.getElementById('card-brand10');
+            brandElement10.textContent = "BN. : " + data[9].brand;
+
+        })
+.catch(error => console.error("Error fetching JSON data:", error))
 
 document.getElementById("men_prds").addEventListener("click",hidex);
 function hidex(){
