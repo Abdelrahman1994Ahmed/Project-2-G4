@@ -806,6 +806,7 @@ body {
     background-color: #ffff;
     margin-right: 10px;
     text-align: center;
+    padding: 1vh 0vh 0vh 0vh;
 }
 
 .days::after {
