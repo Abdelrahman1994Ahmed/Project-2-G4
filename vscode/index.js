@@ -471,7 +471,7 @@ function topFunction() {
 //gettime time value by mill second 1000 millsecond = 1 sec
 //date ال عايز اوصلة 
 //  day  date /1000millsec/60 minu/60 hours/ 24 days
-let countDate = new Date("Apr 29 , 2024 20:59:59").getTime();
+let countDate = new Date("May 23 , 2024 20:59:59").getTime();
 
 let counter = setInterval(() => {
     //current date
